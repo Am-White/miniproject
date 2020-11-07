@@ -10,52 +10,59 @@
     
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-7 text-align:center"> New York Times Search</h1>
+            <h1 class="display-7" style="text-align:center"> New York Times Search</h1>
        </div>
-       <div class="card border-dark mb-3 container-lg" style="max-width: 18rem;">
-        <div class="card-header">Header</div>
+       <div class="card border-dark mb-3 " style="max-width: auto;">
+        <div class="card-header">Search Parameters</div>
         <div class="card-body text-dark">
-          <h5 class="card-title">Dark card title</h5>
           
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
+                
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Search Term:</label>
+                    <input type="text" class="form-control" id="searchTerm">
+                  </div>
+
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
+              <label for="exampleFormControlSelect1">Number of Record to Retrieve:</label>
+              <select class="form-control" id="recordNumber">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
                 <option>4</option>
                 <option>5</option>
               </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Left</button>
-                <button type="button" class="btn btn-secondary">Middle</button>
-            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Start Year(Optional):</label>
+                <input id="startYear" type="text" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="formGroupExampleInput">End Year(Optional):</label>
+                <input id="endYear" type="text" class="form-control" >
+              </div>
+            
+
+              <div>
+                <button id="searchBtn" type="button" class="btn btn-sm">Search</button>
+                <button id="clearBtn" type="button" class="btn btn-sm">Clear Results</button>
+              </div>
           </form>
-
+        
         </div>
       </div>
-   
+    </div>
+    <div id="top-articles" class="card border-dark mb-3 container-lg" style="max-width: auto;">
+        <div class="card-header">Top Articles</div>
+        <div class="card-body text-dark">
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2 style="text-align:center; font-size: 15px;">Made with lots of love</h2>
     </div>
 
     <script
